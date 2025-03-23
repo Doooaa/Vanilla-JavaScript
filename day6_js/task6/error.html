@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>error task</h1>
+  <!-- 1- Create a function that accepts only 2 parameters and throw 
+  exception if number of parameters either less than or exceeds 2 
+  parameters   -->
+
+    <!-- 2-. Create an adding function that adds n numbers only. 
+    Throw exception if the user passed any data type other than 
+    “number” or called your function without passing any 
+    parameters.  -->
+
+
+  <script>
+     //task 1.2
+    // try{
+    //     console.log(sum(1,2)); // should work fine
+    //     console.log(sum(1,2,3)); // should throw an error
+    // }
+    // catch
+
+    // (error) {
+    //     console.error(error.message);
+    // }
+    // function sum(a,b){
+    //     if(arguments.lenght==0||arguments.length>2) throw new Error("error must be 2 parameters");
+    //     return a + b;
+    // }
+   //task 1.3
+    try{
+        console.log(enhancedSum(1,10)); // should work fine
+        console.log(enhancedSum(1,"2" )); // should work fine
+        console.log(enhancedSum(1,2,"3")); // should throw an error
+    }
+    catch(error) {
+        console.error(error.message);
+    }
+   function enhancedSum(a,b)
+    {
+         if(typeof(a)!="number"||typeof(b)!="number") throw new Error("must be number");
+         if(arguments.length!=2) throw new Error("must be 2 parameters");
+
+         return a + b;
+    }
+  </script>
+</body>
+</html>

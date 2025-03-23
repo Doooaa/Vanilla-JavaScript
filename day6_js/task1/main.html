@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgba(231, 138, 180, 0.575);
+
+    }
+
+    table {
+        text-align: center;
+    }
+
+    td {
+        /* margin-top: 30px; */
+        width: 150px;
+        height: 150px;
+
+        /* border-radius: 50%; */
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+        border: 4px solid rgb(124, 237, 126);
+        /* border-radius: 50%; */
+    }
+
+    .middle {
+        padding-top: 40px;
+        width: 600px;
+        margin: auto;
+    }
+    input[type="text"]
+    {
+        padding: 30px  80px;
+    }
+    button{
+        padding: 10px  20px;
+        color: #fff;
+        font-size: 18px;
+        background-color: rgba(87, 48, 66, 0.575);
+        border: none;
+    }
+</style>
+
+<body>
+
+
+    <div class="middle">
+        <table>
+            <tr>
+                <td>
+                    <label for="c1">
+                        <img src="CardMaker/gws.jpg" alt=""> <br>
+                        <input type="radio" id="c1" name="cardChoice" value="1">
+                    </label>
+                </td>
+                <td>
+                    <label for="c2">
+                        <img src="CardMaker/gws2.jpg" alt=""> <br>
+                        <input type="radio" id="c2" name="cardChoice" value="2">
+                    </label>
+                </td>
+                <td>
+                    <label for="c3">
+                        <img src="CardMaker/gws3.jpg" alt="">
+                        <input type="radio" id="c3" name="cardChoice" value="3">
+                    </label>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td><label for="c4">
+
+                        <img src="CardMaker/gws4.jpg" alt="">
+                        <input type="radio" id="c4" name="cardChoice" value="4">
+                    </label></td>
+                <td><label for="c5">
+
+                        <img src="CardMaker/gws5.jpg" alt="">
+                        <input type="radio" id="c5" name="cardChoice" value="5">
+                    </label></td>
+                <td> <label for="c6">
+
+                        <img src="CardMaker/gws6.jpg" alt="">
+                        <input type="radio" id="c6" name="cardChoice" value="6">
+                    </label></td>
+            </tr>
+           <tr>
+                    
+                    <td colspan="3"><textarea name="" id="txt" cols="60" role="30"></textarea></td>
+           </tr>
+           <tr>
+                    
+            <td colspan="3"><button id="gen">Genarete</button></td>
+           </tr>
+        </table>
+    </div>
+    <script src="cookieLibrary.js"></script>
+    <script src="task1.js"></script>
+</body>
+
+</html>
